@@ -64,8 +64,7 @@ class MainFragment : Fragment() {
 
         val text = MainFragmentDirections.actionMainFragmentToSecondFragment("Hello")
 
-        val button = view.findViewById<Button>(R.id.button)
-        button.setOnClickListener {
+        view.findViewById<Button>(R.id.button).setOnClickListener {
             findNavController().navigate(text)
         }
     }
