@@ -62,10 +62,10 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val text = MainFragmentDirections.actionMainFragmentToSecondFragment("Hello")
+        val action = MainFragmentDirections.actionMainFragmentToSecondFragment("Hello")
 
         view.findViewById<Button>(R.id.button).setOnClickListener {
-            findNavController().navigate(text)
+            findNavController().navigate(action)
         }
     }
 }
